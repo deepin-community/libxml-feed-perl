@@ -1,5 +1,325 @@
-template-repository (1.0-1) unstable; urgency=medium
+libxml-feed-perl (0.63+dfsg-1) unstable; urgency=medium
 
-  * Initial release
+  * Import upstream version 0.63+dfsg.
+  * Email change: Florian Schlichting -> fsfs@debian.org
+  * Declare compliance with Debian Policy 4.6.0
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Florian Schlichting <fsfs@debian.org>  Wed, 01 Sep 2021 22:37:35 +0800
+
+libxml-feed-perl (0.61+dfsg-1) unstable; urgency=medium
+
+  * Import upstream version 0.61+dfsg.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 01 Feb 2021 18:36:07 +0100
+
+libxml-feed-perl (0.60+dfsg-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+  * Import upstream version 0.60+dfsg.
+  * Add build dependency on libxml-xpath-perl.
+  * Install new ChangeLog.md as upstream changelog.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints and alternatives from (build)
+    dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 24 Jan 2021 01:48:44 +0100
+
+libxml-feed-perl (0.59+dfsg-1) unstable; urgency=medium
+
+  * Import upstream version 0.59.
+  * Update debian/upstream/metadata.
+  * Update years of packaging copyright.
+  * Add new dependencies.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Bump debhelper compatibility level to 11.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 06 Feb 2019 18:31:53 +0100
+
+libxml-feed-perl (0.55+dfsg-1) unstable; urgency=medium
+
+  * Import upstream version 0.55.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 17 Oct 2018 17:47:55 +0200
+
+libxml-feed-perl (0.54+dfsg-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ intrigeri ]
+  * Switch repackaging framework to Files-Excluded method.
+
+  [ gregor herrmann ]
+  * Remove Jaldhar H. Vyas from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 0.54.
+  * Declare compliance with Debian Policy 4.2.1.
+  * Update alternative, versioned (build) dependencies.
+  * Bump debhelper compatibility level to 10.
+  * Remove trailing whitespace from debian/*.
+  * Refresh debian/patches/fix-category-test (offset).
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 10 Oct 2018 20:30:26 +0200
+
+libxml-feed-perl (0.53+dfsg-1) unstable; urgency=medium
+
+  * Add debian/upstream/metadata.
+  * Import upstream version 0.53+dfsg.
+  * Update {Upstream,}-Contact in debian/{copyright,upstream/metadata}.
+  * Bump versioned build dependency on libmodule-build-perl.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 15 Dec 2015 21:10:06 +0100
+
+libxml-feed-perl (0.52+dfsg-3) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update Module::Build dependency.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 May 2015 18:20:45 +0200
+
+libxml-feed-perl (0.52+dfsg-2) unstable; urgency=low
+
+  * Team upload
+
+  [ gregor herrmann ]
+  * Explicitly (build)depend on Module::Pluggable. (Closes: #711677)
+
+ -- Damyan Ivanov <dmn@debian.org>  Tue, 13 Aug 2013 22:01:24 +0200
+
+libxml-feed-perl (0.52+dfsg-1) unstable; urgency=low
+
+  * Update debian/repack.stub.
+  * New upstream release.
+  * Build-depend on Module::Build 0.40.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Mar 2013 19:20:58 +0100
+
+libxml-feed-perl (0.51+dfsg-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Set Standards-Version to 3.9.4 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 18 Feb 2013 20:04:22 +0100
+
+libxml-feed-perl (0.50+dfsg-1) unstable; urgency=low
+
+  [ Florian Schlichting ]
+  * Imported Upstream versions 0.49+dfsg, 0.50+dfsg.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Mon, 13 Aug 2012 20:37:27 +0200
+
+libxml-feed-perl (0.48+dfsg-1) unstable; urgency=low
+
+  * Imported Upstream version 0.48+dfsg.
+  * Dropped 01_atom_date.patch, applied upstream.
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Tue, 20 Mar 2012 23:31:22 +0100
+
+libxml-feed-perl (0.47+dfsg2-1) unstable; urgency=low
+
+  * Imported Upstream version 0.47.
+  * Bumped dependency on libxml-atom-perl to version 0.38
+  * Bumped Standards-Version to 3.9.3 (use copyright-format 1.0)
+  * Bumped year of packaging copyright
+  * Refreshed 01_atom_date.patch (code moved to new file)
+  * Ship check_feed.pl in examples/
+  * Added t/samples/rss10-datespaces.xml to repack.local
+  * Added fix-bug73160-test.patch to not run a test without its data
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Sun, 11 Mar 2012 22:50:27 +0100
+
+libxml-feed-perl (0.46+dfsg-1) unstable; urgency=low
+
+  [ Florian Schlichting ]
+  * New upstream release
+  * README.source is now "quilt cruft", removed.
+  * Refreshed 01_atom_date.patch.
+  * Added myself to Uploaders and copyright.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Fri, 18 Nov 2011 09:22:15 +0000
+
+libxml-feed-perl (0.44+dfsg-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * Email change: Ryan Niebur -> ryan@debian.org
+
+  [ Nicholas Bamber ]
+  * Added myself to Uploaders
+  * New upstream release
+  * Raised standards version to 3.9.2
+  * Refreshed patches and added headers
+  * Refreshed copyright and rules
+  * Email change: gregor herrmann -> gregoa@debian.org
+  * Raised compat level and debhelper version to 8
+  * Converted to '3.0 (quilt)' format and removed quilt cruft
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Mon, 18 Jul 2011 02:57:59 +0100
+
+libxml-feed-perl (0.43+dfsg-1) unstable; urgency=low
+
+  * New upstream release
+  * update (build-)depends
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 07 May 2009 23:21:42 -0700
+
+libxml-feed-perl (0.42+dfsg-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself to Uploaders
+  * standards version 3.8.1
+  * add libxml-rss-libxml-perl to build-depends-indep for the tests
+  * update debian copyright
+  * debian/control: Changed: Maintainer set to Debian Perl Group <pkg-
+    perl-maintainers@lists.alioth.debian.org> (was: Daebian Perl Group
+    <pkg-perl-maintainers@lists.alioth.debian.org>).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * repack upstream tarball to remove t/samples/category-bug.xml
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Sat, 18 Apr 2009 11:28:06 -0700
+
+libxml-feed-perl (0.41-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump (build) dependency on libxml-rss-perl to >= 1.40.
+  * Refresh patch 01_atom_date.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 13 Dec 2008 03:06:45 +0100
+
+libxml-feed-perl (0.40-1) unstable; urgency=low
+
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * New upstream release.
+  * Bump (build) dependencies: libxml-rss-perl to >= 1.37, libxml-atom-perl to
+    >= 0.32.
+  * Refresh patch 01_atom_date.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 28 Nov 2008 21:13:59 +0100
+
+libxml-feed-perl (0.30-1) unstable; urgency=low
+
+  * debian/watch: add uversionmangle, upstream now uses 1 digit instead of 2
+    for minor versions.
+  * New upstream release, includes a fix for "very hard to handle relative
+    links in feeds" (closes: #381359).
+  * debian/control: bump versioned (build) dependency on libxml-rss-perl to >=
+    1.31; add build dependencies on libtest-pod-perl and
+    libtest-pod-coverage-perl; remove libmodule-build-perl from Build-Depends.
+  * Refresh patch 01_atom_date.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 06 Nov 2008 21:18:04 +0100
+
+libxml-feed-perl (0.21-1) unstable; urgency=low
+
+  * New upstream release, includes a fix for "missing ability to specify feed
+    type" (closes: #477394).
+  * Change patch system from dpatch to quilt.
+  * Set Standards-Version to 3.8.0.
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * Refresh patch 01_atom_date.patch, partly adopted upstream.
+  * debian/control:
+    - added: Vcs-Svn field (source stanza); Vcs-Browser field (source stanza);
+      Homepage field (source stanza); removed: XS-Vcs-Svn fields
+    - change my email address
+    - wrap long lines
+    - bump (build) dependency on libxml-atom-perl to >= 0.23
+    - add an explicit versioned (build) dependency on libxml-libxml-perl
+  * Set debhelper compatibility level to 7; adapt
+    debian/{control,compat,rules}.
+  * Don't install README any more.
+  * debian/copyright: switch to new format.
+  * debian/watch: use dist-based URL.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 17 Oct 2008 17:13:31 +0200
+
+libxml-feed-perl (0.12-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix problem with date parsing of atom feeds by applying a slightly modified
+    patch provided by Joey Hess - thanks! (Closes: #380498)
+  * Changed versioned (build) dependency on libxml-atom-perl to >= 0.22.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Tue, 22 Aug 2006 02:50:01 +0200
+
+libxml-feed-perl (0.10-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 21 Jul 2006 14:30:24 +0200
+
+libxml-feed-perl (0.09-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set Maintainer to Debian Perl Group.
+  * Set Standards-Version to 3.7.2 (no changes needed).
+  * Set Debhelper compatibility level to 5.
+  * Move debhelper from Build-Depends-Indep to Build-Depends.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 14 Jul 2006 22:34:33 +0200
+
+libxml-feed-perl (0.08-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added watch file.  Thanks Krzysztof Krzyzaniak.
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Wed, 15 Mar 2006 17:56:16 -0500
+
+libxml-feed-perl (0.07-1) unstable; urgency=low
+
+  * Initial release. (Closes: #350054)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Fri, 10 Feb 2006 17:27:00 -0500
