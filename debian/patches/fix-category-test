@@ -1,0 +1,16 @@
+Subject: that file is removed, so skip the test
+Forwarded: not-needed
+Author: Ryan Niebur <ryan@debian.org>
+Reviewed-by: Nicholas Bamber <nicholas@periapt.co.uk>
+Last-Update: 2018-10-10
+
+--- a/t/13-category-hash-bug.t
++++ b/t/13-category-hash-bug.t
+@@ -4,6 +4,7 @@
+ 
+ eval { require XML::RSS::LibXML };
+ plan skip_all => "XML::RSS::LibXML is required." if $@;
++plan skip_all => "category-bug.xml does not exist" if(! -f "t/samples/category-bug.xml");
+ 
+ plan tests => 20;
+ 

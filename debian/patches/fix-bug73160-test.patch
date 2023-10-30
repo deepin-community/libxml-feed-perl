@@ -1,0 +1,15 @@
+Description: repacking removed the file to be tested, so skip the test
+Author: Florian Schlichting <fsfs@debian.org>
+Forwarded: not-needed
+
+--- a/t/22-bug73160.t
++++ b/t/22-bug73160.t
+@@ -4,6 +4,8 @@
+ use Test::More;
+ use XML::Feed;
+ 
++plan skip_all => "t/samples/rss10-datespaces.xml does not exist" if(! -f "t/samples/rss10-datespaces.xml");
++
+ my $file = 't/samples/rss10-datespaces.xml';
+ my $feed = XML::Feed->parse($file);
+ isa_ok($feed, 'XML::Feed::Format::RSS');
